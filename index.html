@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>LocalPrompt | AI Prompts for Small Business</title>
-    <meta name="description" content="LocalPrompt generates ready-to-use AI prompts for small business owners. Save time on marketing, emails, and customer service.">
+    <meta name="description" content="LocalPrompt generates ready-to-use AI prompts for small business owners. Save hours on marketing, emails, and customer service.">
     <style>
         :root {
             --bg-color: #09090b;
@@ -47,6 +47,16 @@
         }
         .logo span {
             color: var(--accent);
+        }
+        .nav-links a {
+            color: var(--text-muted);
+            text-decoration: none;
+            margin-left: 20px;
+            font-size: 0.95rem;
+            transition: color 0.2s;
+        }
+        .nav-links a:hover {
+            color: var(--text-main);
         }
 
         /* Hero Section */
@@ -129,17 +139,41 @@
             font-size: 0.95rem;
         }
 
+        /* Founder Section */
+        .founder {
+            padding: 80px 20px;
+            max-width: 800px;
+            margin: 0 auto;
+            text-align: center;
+            border-top: 1px solid var(--border);
+            border-bottom: 1px solid var(--border);
+        }
+        .founder h2 {
+            font-size: 1.8rem;
+            margin-bottom: 20px;
+            letter-spacing: -0.5px;
+        }
+        .founder p {
+            color: var(--text-muted);
+            font-size: 1.1rem;
+            margin-bottom: 20px;
+        }
+        .founder .highlight {
+            color: var(--text-main);
+            font-weight: 600;
+        }
+
         /* Footer */
         footer {
             text-align: center;
             padding: 60px 20px;
-            border-top: 1px solid var(--border);
             color: var(--text-muted);
             font-size: 0.9rem;
         }
         footer a {
             color: var(--accent);
             text-decoration: none;
+            margin: 0 10px;
         }
         footer a:hover {
             text-decoration: underline;
@@ -148,7 +182,8 @@
         @media (max-width: 768px) {
             .hero h1 { font-size: 2.5rem; }
             .hero { padding: 80px 20px 40px; }
-            nav { padding: 20px; }
+            nav { flex-direction: column; gap: 15px; padding: 20px; }
+            .nav-links a { margin: 0 10px; }
         }
     </style>
 </head>
@@ -156,15 +191,20 @@
 
     <nav>
         <div class="logo">Local<span>Prompt</span></div>
+        <div class="nav-links">
+            <a href="#features">Features</a>
+            <a href="#about">About</a>
+            <a href="mailto:harliv@localprompt.me">Contact</a>
+        </div>
     </nav>
 
     <header class="hero">
         <h1>AI prompts built for small business.</h1>
         <p>Stop wasting hours writing marketing copy, emails, and customer replies. LocalPrompt gives you ready-to-use AI prompts tailored to your specific business needs.</p>
-        <a href="mailto:hello@localprompt.me" class="cta-button">Get Early Access</a>
+        <a href="mailto:harliv@localprompt.me" class="cta-button">Get Early Access</a>
     </header>
 
-    <section class="features">
+    <section class="features" id="features">
         <h2>Why founders love LocalPrompt</h2>
         <div class="grid">
             <div class="card">
@@ -182,9 +222,20 @@
         </div>
     </section>
 
+    <section class="founder" id="about">
+        <h2>About LocalPrompt</h2>
+        <p>Hi, I'm <span class="highlight">Harliv Singh</span>, the founder of LocalPrompt.</p>
+        <p>I built this tool because I saw too many small business owners struggling to keep up with content creation. You shouldn't need a marketing degree to write a great Facebook post or a polite follow-up email. LocalPrompt uses the power of AI to give you the right words, right when you need them.</p>
+        <p>We are currently in early access. Reach out to <a href="mailto:harliv@localprompt.me" style="color:var(--accent); text-decoration:none;">harliv@localprompt.me</a> to get started.</p>
+    </section>
+
     <footer>
         <p>&copy; 2026 LocalPrompt. All rights reserved.</p>
-        <p>Contact us: <a href="mailto:hello@localprompt.me">hello@localprompt.me</a></p>
+        <p>
+            <a href="#">Privacy Policy</a> | 
+            <a href="#">Terms of Service</a> | 
+            <a href="mailto:harliv@localprompt.me">harliv@localprompt.me</a>
+        </p>
     </footer>
 
 </body>
